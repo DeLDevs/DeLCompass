@@ -1,0 +1,18 @@
+name: DeLCompass
+authors: [DeLson]
+description: Compasses that can track players.
+main: fun.delson.delcompass.DeLCompass
+version: 1.0
+api-version: 1.19
+
+commands:
+   maketracker:
+      description: Makes a new tracker.
+      usage: "Usage: /maketracker [optional: player]"
+      permission: delcompass.create
+      permission-message: You do not have permission to use this command.
+   settarget:
+      description: Sets the target of the tracker in main hand.
+      usage: "Usage: /settarget [player]"
+      permission: delcompass.target
+      permission-message: You do not have permission to use this command.
