@@ -3,10 +3,13 @@ package fun.delson.delcompass.utils;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.CompassMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class CompassUtils {
@@ -89,5 +92,18 @@ public class CompassUtils {
 		compass.setItemMeta(compass_meta);
 		
 	}
-
+	
+	/**
+	 * Refreshes the compass's target location.
+	 * @param compass Tracker to be refreshed.
+	 */
+	public static void refresh (ItemStack compass) {
+		if (checkTracker(compass) && compass.getItemMeta().getLore().size() > 1) {
+			Location location = Bukkit.getPlayer(compass.getItemMeta().getLore().get(1)).getLocation();
+			CompassMeta compass_meta = (CompassMeta) compass.getItemMeta();
+			compass_meta.setLodestone(location);
+			compass_meta.setLodestoneTracked(false);
+			compass.setItemMeta(compass_meta);
+		}
+	}
 }

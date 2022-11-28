@@ -24,7 +24,7 @@ public class CompassRefresh implements Listener {
 				if (item.getItemMeta().getLore().size() > 1) {
 					Player trackedPlayer = Bukkit.getPlayer(item.getItemMeta().getLore().get(1));
 					String trackedDisplayName = trackedPlayer.getDisplayName();
-					player.setCompassTarget(trackedPlayer.getLocation());
+					CompassUtils.refresh(item);
 					player.sendMessage(Chat.color("&bTracker is now pointing toward " + trackedDisplayName));
 				}
 			} else if (CompassUtils.checkCompass(item)) {
