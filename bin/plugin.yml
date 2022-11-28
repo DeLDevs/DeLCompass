@@ -2,7 +2,7 @@ name: DeLCompass
 authors: [DeLson]
 description: Compasses that can track players.
 main: fun.delson.delcompass.DeLCompass
-version: 1.0
+version: 2.0
 api-version: 1.19
 
 commands:
