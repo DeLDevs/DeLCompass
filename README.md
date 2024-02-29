@@ -1,8 +1,7 @@
 # DeLCompass
 Compasses that can track players.
-<br>
 
-### Features
+## Features
 - Creation of custom tracking compasses
     - Usage: `/maketracker [optional: player]`
 - Editing of targeted player for any compass
@@ -13,12 +12,10 @@ Compasses that can track players.
 - Permissions for each command.
     - `delcompass.create`
     - `delcompass.target`
-<br>
 
-### Installation
+## Installation
 Install it like any old plugin.
 Just take the `DeLCompass_vX.X.X.jar` and stick that sucker into your plugins directory and you should be good to go!
-<br>
 
 #### Build from source
 1. Clone the repo.
