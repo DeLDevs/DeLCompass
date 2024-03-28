@@ -20,7 +20,7 @@ Just take the `DeLCompass_vX.X.X.jar` and stick that sucker into your plugins di
 #### Build from source
 1. Clone the repo.
     ```
-    git clone https://github.com/DeLDevs/DeLCompass.git DeLCompass.git`
+    git clone https://github.com/DeLDevs/DeLCompass.git DeLCompass
     ```
 2. Ensure that you have Gradle and java installed.
     - https://gradle.org/install/
