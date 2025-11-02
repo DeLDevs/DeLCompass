@@ -1,0 +1,14 @@
+delcompass.*:
+   description: Wildcard
+   default: op
+delcompass.create:
+   description: Allows the creation of tracker compasses.
+   default: op
+   children:
+      delcompass.*: true
+delcompass.target:
+   description: Allows the setting of tracker targets.
+   default: op
+   children:
+      delcompass.*: true
+      delcompass.create: true
